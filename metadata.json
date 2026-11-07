@@ -1,0 +1,11 @@
+{
+  "name": "Remix: NXB",
+  "description": "A premium sports betting interface combining the best features of top platforms, enhanced with real-time Gemini AI match analysis and predictions.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

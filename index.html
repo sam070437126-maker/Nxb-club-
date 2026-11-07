@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>NEXUS SOVEREIGN | Institutional Sports Exchange & Prediction Terminal</title>
+    <meta name="description" content="Institutional sports intelligence, Gemini AI predictive models, sharp money analytics, and social sports wagering terminal." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              slate: {
+                850: '#151f2e',
+              }
+            },
+            animation: {
+              'spin-slow': 'spin 3s linear infinite',
+              'music': 'music 1s ease-in-out infinite',
+              'fall': 'fall 3s linear forwards',
+              'slideInRight': 'slideInRight 0.3s ease-out',
+              'bounceShort': 'bounceShort 0.5s ease-in-out infinite',
+            },
+            keyframes: {
+              music: {
+                '0%, 100%': { height: '20%' },
+                '50%': { height: '60%' },
+              },
+              fall: {
+                '0%': { transform: 'translateY(-10vh) rotate(0deg)', opacity: '1' },
+                '100%': { transform: 'translateY(110vh) rotate(720deg)', opacity: '0' },
+              },
+              slideInRight: {
+                'from': { opacity: '0', transform: 'translateX(20px)' },
+                'to': { opacity: '1', transform: 'translateX(0)' },
+              },
+              bounceShort: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10%)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', sans-serif; -webkit-tap-highlight-color: transparent; }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+      .pb-safe {
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+    </style>
+</head>
+  <body class="bg-slate-100 dark:bg-slate-950 transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
